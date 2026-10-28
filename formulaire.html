@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <style>
+    input, select {
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+
+    <form action="https://digicode.cleverapps.io/utilisateurs/create" method="POST">
+
+        <input type="hidden" name="idCreateur" value="VotreNom">
+
+        Nom : <input name="nom"><br>
+        Prénom : <input name="prenom"><br>
+        Date de naissance : <input type="date" name="dateNaissance"><br>
+        Lieu de naissance : <input name="lieuNaissance"><br>
+
+        Département de naissance :
+        <select name="departementNaissance">
+            <option value="30">Gard</option>
+            <option value="34">Hérault</option>
+        </select><br>
+
+        Numéro de rue : <input name="numeroRue"><br>
+        Libellé de la rue : <input name="libelleRue"><br>
+        Code postal : <input name="codePostal"><br>
+        Ville : <input name="ville"><br>
+
+        <input type="submit" value="Valider">
+        <input type="reset" value="Effacer">
+
+    </form>
+
+</body>
+</html>
