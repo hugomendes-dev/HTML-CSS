@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Pays les plus polluants</title>
+         <style>
+        th {
+            color: white;
+            background-color: darkblue;
+        }
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        td {
+            text-align: right;
+        }
+        td:first-child {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
@@ -10,30 +25,28 @@
 
     <table border="1" style="width: 75%;">
         <tr>
+            <th style="width: 55%;">Pays</th>
+            <th style="width: 15%;">CO<sub>2</sub><br>(en milliards de tonnes)</th>
+            <th style="width: 15%;">CO<sub>2</sub><br>(en %)</th>
+            <th style="width: 15%;">en tonnes<br>par hab.</th>
+        </tr>
+        <tr>
             <td><img src="https://flagsapi.com/CN/flat/16.png" alt="Drapeau Chine"> Chine</td>
-            <td align="right">9.26</td>
-            <td align="right">28.2</td>
-            <td align="right">6.68</td>
+            <td >9.26</td>
+            <td >28.2</td>
+            <td >6.68</td>
         </tr>
         <tr>
             <td><img src="https://flagsapi.com/US/flat/16.png" alt="Drapeau Etats-Unis"> Etats-Unis</td>
-            <td align="right">4.76</td>
-            <td align="right">14.5</td>
-            <td align="right">14.61</td>
+            <td >4.76</td>
+            <td >14.5</td>
+            <td >14.61</td>
         </tr>
         <tr>
             <td><img src="https://flagsapi.com/IN/flat/16.png" alt="Drapeau Inde"> Inde</td>
-            <td align="right">2.16</td>
-            <td align="right">6.6</td>
-            <td align="right">1.61</td>
+            <td >2.16</td>
+            <td >6.6</td>
+            <td >1.61</td>
         </tr>
         <tr>
-            <td><img src="https://flagsapi.com/RU/flat/16.png" alt="Drapeau Russie"> Russie</td>
-            <td align="right">1.54</td>
-            <td align="right">4.7</td>
-            <td align="right">10.64</td>
-        </tr>
-    </table>
-
-</body>
-</html>
+            <td><img
