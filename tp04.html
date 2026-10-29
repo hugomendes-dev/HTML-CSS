@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ciné Lumière</title>
+    <style>
+        body {
+            font-family: Verdana;
+            background-color: #111111;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #FFC300;
+        }
+
+        .contenu {
+            display: flex;
+        }
+
+        nav {
+            background-color: #2B2B2B;
+            width: 150px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #FFC300;
+        }
+
+        main {
+            background-color: #1E1E1E;
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #FFC300;
+        }
+
+        .sections {
+            display: flex;
+            gap: 15px;
+        }
+
+        section {
+            background-color: #333333;
+            flex: 1;
+            height: 250px;
+            border: 1px solid #FFC300;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        section:hover {
+            background-color: #444444;
+            cursor: pointer;
+        }
+
+        section h3:before {
+            content: "🎬 ";
+        }
+
+        footer {
+            background-color: #000000;
+            color: #FFC300;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ciné Lumière</h1>
+        <p>Le cinéma de votre quartier</p>
+    </header>
+
+    <div class="contenu">
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Horaires</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>À l'affiche cette semaine</h2>
+            <div class="sections">
+                <section>
+                    <h3>Gladiator</h3>
+                    <p>Action - 2h35</p>
+                    <p>14h00 / 20h30</p>
+                </section>
+                <section>
+                    <h3>Inception</h3>
+                    <p>Science-fiction - 2h28</p>
+                    <p>16h30 / 21h00</p>
+                </section>
+                <section>
+                    <h3>Forrest Gump</h3>
+                    <p>Drame - 2h22</p>
+                    <p>10h00 / 15h00</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Ciné Lumière - 12 rue des Étoiles - Tarif plein : 9 € / Réduit : 6 €</p>
+    </footer>
+
+</body>
+</html>
