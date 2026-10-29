@@ -1,0 +1,174 @@
+body {
+    
+    background-color: #1A0F1F;
+    color: #F5E6F0;
+}
+
+header {
+    display: flex;
+    background-color: #120A16;
+    padding: 15px 40px;
+}
+
+.logo {
+    flex-grow: 1;
+    color: #FF2E88;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+
+}
+
+nav a {
+    color: #F5E6F0;
+}
+
+nav a:hover {
+    color: #FF2E88;
+}
+
+.hero {
+    background-color: #2A1530;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    color: #FF2E88;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #FF2E88;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.bouton:hover {
+    background-color: #D91E6F;
+}
+
+.philo {
+    display: flex;
+    gap: 30px;
+    padding: 40px 15%;
+}
+
+.philo div {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.philo h3:before {
+    content: "🎬 ";
+}
+
+.philo img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #FF2E88;
+}
+
+footer {
+    background-color: #120A16;
+    color: #FF2E88;
+    text-align: center;
+    padding: 20px;
+}
+
+.page {
+    width: 60%;
+    margin: 0 20%;
+    padding: 30px 0;
+}
+
+h2 {
+    color: #FF2E88;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #FF2E88;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #2A1833;
+}
+
+tr:nth-child(odd) {
+    background-color: #22132A;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 95%;
+    padding: 8px;
+    background-color: #22132A;
+    color: #F5E6F0;
+    border: 1px solid #5A3A66;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    background-color: #FF2E88;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #D91E6F;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+    .philo {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+    .page {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
